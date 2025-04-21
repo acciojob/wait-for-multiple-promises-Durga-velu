@@ -39,7 +39,7 @@ let loadingCol=document.createElement("td");
 loadingCol.colSpan=2;
 loadingCol.textContent="Loading..."
 loadingRow.appendChild(loadingCol)
-loadingRow.id="loadingRow"
+loadingRow.id="loading"
 output.appendChild(loadingRow);
 
 Promise.all([promise1,promise2,promise3]).then((results) =>{
