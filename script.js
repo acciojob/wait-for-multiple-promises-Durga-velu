@@ -4,7 +4,7 @@
 
 let promise1=new Promise((resolve,reject){
 
-	setTimeOut(()=>{
+	setTimeout(()=>{
 		
 		resolve(2)
 		
@@ -14,7 +14,7 @@ let promise1=new Promise((resolve,reject){
 
 let promise2=new Promise((resolve,reject){
 
-	setTimeOut(()=>{
+	setTimeout(()=>{
 		
 		resolve(1)
 		
@@ -25,7 +25,7 @@ let promise2=new Promise((resolve,reject){
 
 let promise3=new Promise((resolve,reject){
 
-	setTimeOut(()=>{
+	setTimeout(()=>{
 		
 		resolve(3)
 		
@@ -42,7 +42,7 @@ loadingCol.textContent="Loading..."
 loadingRow.appendChild(loadingCol)
 output.appendChild(loadingRow);
 
-Promise.all([promise1,promise1,promise3]).then((results) =>{
+Promise.all([promise1,promise2,promise3]).then((results) =>{
 	
 	output.removeChild(loadingRow);
 
