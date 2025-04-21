@@ -22,7 +22,6 @@ let promise2=new Promise((resolve,reject)=>{
 })
 
 
-
 let promise3=new Promise((resolve,reject)=>{
 
 	setTimeout(()=>{
