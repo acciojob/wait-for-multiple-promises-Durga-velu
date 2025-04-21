@@ -32,7 +32,7 @@ let promise3=new Promise((resolve,reject){
 	},Math.random() * 2000+1000)
 })
 
-let output= document.getElementById("output")
+let output= document.querySelector("#output")
 
 let loadingRow=document.createElement("tr");
 let loadingCol=document.createElement("td");
