@@ -70,4 +70,12 @@ let col1=document.createElement("td");
 	 totalCol2.textContent = totalTime.toFixed(3)
 	    totalRow.appendChild(totalCol2);
 	  output.appendChild(totalRow);
+}).catch((error)=>{
+		output.removeChild(loadingRow);
+	 let errorRow = document.createElement("tr");
+    let errorCol = document.createElement("td");
+    errorCol.textContent = "An error occured While Loading";
+    errorRow.appendChild(errorCol)
+	  output.appendChild(errorRow);
+	      console.error("Error on loading : ", error);
 })
