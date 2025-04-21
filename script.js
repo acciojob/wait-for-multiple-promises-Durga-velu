@@ -2,7 +2,7 @@
 
 
 
-let promise1=new Promise((resolve,reject){
+let promise1=new Promise((resolve,reject)=>{
 
 	setTimeout(()=>{
 		
@@ -12,7 +12,7 @@ let promise1=new Promise((resolve,reject){
 })
 
 
-let promise2=new Promise((resolve,reject){
+let promise2=new Promise((resolve,reject)=>{
 
 	setTimeout(()=>{
 		
@@ -23,7 +23,7 @@ let promise2=new Promise((resolve,reject){
 
 
 
-let promise3=new Promise((resolve,reject){
+let promise3=new Promise((resolve,reject)=>{
 
 	setTimeout(()=>{
 		
@@ -58,7 +58,7 @@ let col1=document.createElement("td");
 	col2.textContent=time.toFixed(3);
 			row.appendChild(col2)
 			output.appendChild(row);
-			)}
+		})
 	
 	
 	 let totalRow = document.createElement("tr");
